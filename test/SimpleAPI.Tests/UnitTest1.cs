@@ -1,12 +1,12 @@
 using System;
 using Xunit;
-using SimpleAPI.Controllers;
 namespace SimpleAPI.Tests
 {
     public class UnitTest1
     {
 
-        ValuesController obj=new ValuesController();
+        SimpleAPI.Controllers.ValuesController obj=new SimpleAPI.Controllers.ValuesController();
+        SimpleAPI2.Controllers.ValuesController obj2=new SimpleAPI2.Controllers.ValuesController();
         [Fact]
         public void Test1()
         {
@@ -17,7 +17,8 @@ namespace SimpleAPI.Tests
         [Fact]
         public void Test2()
         {
-
+            var rtnValue=obj2.Get(1);
+            Assert.Equal("value",rtnValue.Value);
         }
     }
 }

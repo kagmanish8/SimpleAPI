@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\SimpleAPI\SimpleAPI.csproj" />
+    <ProjectReference Include="..\..\src\SimpleAPI2\SimpleAPI2.csproj" />
   </ItemGroup>
 
 </Project>
