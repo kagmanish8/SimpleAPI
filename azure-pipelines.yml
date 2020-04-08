@@ -15,6 +15,7 @@ variables:
 steps:
 
 - task: DotNetCoreCLI@2
+  displayName: 'AutoTest script Check'
   inputs:
     command: test
     projects: '**/*Tests/*.csproj'
