@@ -14,7 +14,7 @@ namespace SimpleAPI2.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1 Simple API   2", "value2 Simple API   2" };
+            return new string[] { "value1 Simple API sdf df    2", "value2 Simple API   2" };
         }
 
         // GET api/values/5
